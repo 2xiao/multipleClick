@@ -1,5 +1,3 @@
-###### 译自 [jQuery Plugins / Authoring](http://docs.jquery.com/Plugins/Authoring)
-
 # 一个监控多次点击事件的jquery插件
 
 ## 源代码
@@ -58,13 +56,14 @@
 
 
 ## 使用方法
+使用示例：[multipleClick.html](http://htmlpreview.github.io/?https://github.com/SmartDoubleXiao/multipleClick/blob/master/multipleClick.html)
 
 	$('.btn').threeClick(800, 3, function(){
 		console.log('被点击了3次');
 	}).css('color', 'red');
 
 # 如何创建一个插件
-
+###### 译自 [jQuery Plugins / Authoring](http://docs.jquery.com/Plugins/Authoring)
 ***
 
 看来 jQuery 你已经用得很爽了，想学习如何自己编写插件。非常好，这篇文档正适合你。用插件和方法来扩展 jQuery 非常强大，把最聪明的功能封装到插件中可以为你及团队节省大量开发时间。
