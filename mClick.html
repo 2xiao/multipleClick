@@ -18,6 +18,7 @@
         .show {
             flex: 1;
             height: 100%;
+            overflow-y: scroll;
         }
         .btns {
             display: flex;
@@ -34,7 +35,7 @@
         .btn {
             width: 100px;
             height: 100px;
-            margin: 200px 100px 100px 100px;
+            margin: 100px;
             border-radius: 100px;
             border: 1px solid #23bd57;
             background: #23bd57;
@@ -48,7 +49,7 @@
             font-size: 20px;
             text-align: center;
             color:#666666;
-            margin: 50px 0 20px 0;
+            margin: 20px 0;
         }
         
     </style>
@@ -57,10 +58,10 @@
     <script>
         $(function(){
             $('#btn1').mClick(800, 3, function(){
-                $('.p-btn1').html("按钮1被点击了三次")
+                $('.show').append("<p>按钮1被点击了三次</p>")
             }).css('color', 'white');
             $('#btn2').mClick(800, 3, function(){
-                $('.p-btn2').html("按钮2被点击了三次")
+                $('.show').append("<p>按钮2被点击了三次</p>")
             }).css('color', 'white');
         });
     </script>
@@ -72,7 +73,6 @@
                 <div class="btn" id="btn1">按钮1</div>
                 <div class="btn" id="btn2">按钮2</div>
             </div>
-            <p class="p-btn1"></p><p class="p-btn2"></p>
         </div>
         <pre class="code">
 
