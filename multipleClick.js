@@ -1,5 +1,5 @@
 (function( $ ){
-    $.fn.threeClick = function( timeout, clickTimes, callback ) {  
+    $.fn.mClick = function( timeout, clickTimes, callback ) {  
 
         return this.each(function() {
 
@@ -51,7 +51,7 @@
 
 //////////// for example///////////////////
 //
-//    $('.btn').threeClick(800, 3, function(){
+//    $('.btn').mClick(800, 3, function(){
 //        console.log('被点击了3次');
 //    }).css('color', 'red');
 //

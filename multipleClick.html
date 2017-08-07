@@ -25,7 +25,7 @@
 <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
     <script>
         (function( $ ){
-            $.fn.threeClick = function( timeout, clickTimes, callback ) {  
+            $.fn.mClick = function( timeout, clickTimes, callback ) {  
 
                 return this.each(function() {
 
@@ -76,7 +76,7 @@
         })( jQuery );
 
         $(function(){
-            $('.btn').threeClick(800, 3, function(){
+            $('.btn').mClick(800, 3, function(){
                 console.log('被点击了3次');
             }).css('color', 'red');
         });
