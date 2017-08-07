@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" user-select>
+    <title>3click</title>
+    <style>
+        body{
+            background: #999999;
+        }
+        .btn {
+            width: 200px;
+            height: 200px;
+            margin-left: 45%;
+            margin-top: 100px;
+            border: 1px solid #666666;
+            background: lightcyan;
+            text-align: center;
+            font-size: 40px;
+            line-height: 200px;
+            user-select: none;
+        }
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+    <script src="./mClick.js"></script>
+    <script>
+        $(function(){
+            $('.btn').mClick(800, 3, function(){
+                console.log('被点击了3次');
+            }).css('color', 'red');
+        });
+    </script>
+</head>
+<body>
+    <div class="btn" id="btn1">按钮1！</div>
+    <div class="btn" id="btn2">按钮2！</div>
+</body>
+</html>
