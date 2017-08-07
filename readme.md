@@ -1,7 +1,7 @@
 # 一个监控多次点击事件的jquery插件
 ## 使用方法
 
-1. 第一步引入本插件的[js文件](https://github.com/SmartDoubleXiao/multipleClick/blob/master/mclick.js),需要和jQuery一起引用。
+1. 第一步引入本插件的[js文件](//xxwu.tech/multipleClick/mclick.js),需要和jQuery一起引用。
 
 ```
 <script src="js/jquery/3.2.1/jquery.js"></script>
