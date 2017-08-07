@@ -17,6 +17,6 @@ $('.btn').mClick(800, 3, function(){
 ```
 其中第一个参数是两次点击时间得最大间隔时间，第二个参数是点击几次调用回调函数，第三个参数是完成一次多次点击后执行的回调函数。
 
-使用示例：[multipleClick.html](http://htmlpreview.github.io/?https://github.com/SmartDoubleXiao/multipleClick/blob/master/multipleClick.html)
+使用示例：[mClick.html](http://htmlpreview.github.io/?https://github.com/SmartDoubleXiao/multipleClick/blob/master/mClick.html)
 
 
