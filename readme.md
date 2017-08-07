@@ -5,7 +5,7 @@
 
 ```
 <script src="js/jquery/3.2.1/jquery.js"></script>
-<script src="./mClick.js"></script>
+<script src="js/mClick.js"></script>
 ```	
 2.使用`.mClick()`调用插件
 
