@@ -51,6 +51,10 @@
             color:#666666;
             margin: 20px 0;
         }
+        .outcome p:first-child{
+            color: #03792b;
+            font-size: 24px;
+        }
         
     </style>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
@@ -58,10 +62,12 @@
     <script>
         $(function(){
             $('#btn1').mClick(800, 3, function(){
-                $('.show').append("<p>按钮1被点击了三次</p>")
+                $('.outcome').prepend("<p>按钮1被点击了三次</p>")
             }).css('color', 'white');
             $('#btn2').mClick(800, 3, function(){
-                $('.show').append("<p>按钮2被点击了三次</p>")
+                $('.outcome').prepend("<p>按钮2被点击了三次</p>")
+                console.log($(this))
+                $(this).css("backgroung", "red" )
             }).css('color', 'white');
         });
     </script>
@@ -74,6 +80,7 @@
                 <div class="btn" id="btn1">按钮1</div>
                 <div class="btn" id="btn2">按钮2</div>
             </div>
+            <div class="outcome"></div>
         </div>
         <pre class="code">
 
